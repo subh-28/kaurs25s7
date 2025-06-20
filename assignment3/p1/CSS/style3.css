@@ -60,5 +60,13 @@ body{
     */
     letter-spacing: 0.3px;
     word-spacing: 0.4px;
-    
+}
+/*
+Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
+*/
+h1{
+    font-size:2.5rem;
+}
+h2{
+    font-size: 1.6rem;
 }
