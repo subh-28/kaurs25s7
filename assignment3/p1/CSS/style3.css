@@ -46,6 +46,7 @@ header, footer {
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
 
 body{
+    font-family: 'Merriweather', serif;
 /*
 Give the page a site-wide font-size of 10px.
 */
@@ -59,5 +60,14 @@ Give the page a site-wide font-size of 10px.
   */
   letter-spacing: 0.5px;
   word-spacing: 1px;
+}
+
+h1,h2,h3{
+    font-family: 'Lato',sans-serif;
+    /*
+    Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
+    */
+    font-size: 2.4rem;
+
 
 }
