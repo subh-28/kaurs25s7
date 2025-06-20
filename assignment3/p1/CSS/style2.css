@@ -28,6 +28,9 @@ div{
     /*  slight increase in font size, to around 17-18 pixel computed style. Use rems. Write a comment about how you worked out the value.
     */
     font-size: 1.5rem;
-
+/*
+A base color for the design. Give the box this color as its background color.
+*/
+background-color: #e63946;
 
 }
