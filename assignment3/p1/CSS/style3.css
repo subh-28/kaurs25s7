@@ -45,6 +45,8 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
-h1{
-    font-family: 'Josefin Slab', serif;
+body{/*
+    Give the page a site-wide font-size of 10px.
+    */
+    font-size: 10px;
 }
