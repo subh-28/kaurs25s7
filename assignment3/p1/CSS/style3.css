@@ -51,5 +51,10 @@ body{
     Give the page a site-wide font-size of 10px.
     */
     font-size: 10px;
+    /*
+    Give your body text a suitable line-height.
+    */
+    line-height: 1.6;
+    
     
 }
