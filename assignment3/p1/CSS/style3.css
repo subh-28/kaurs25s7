@@ -44,3 +44,12 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Merriweather&display=swap');
+
+body{
+    font-family: 'Merriweather', serif;
+    /*
+    Give the page a site-wide font-size of 10px.
+    */
+    font-size: 10px;
+    
+}
