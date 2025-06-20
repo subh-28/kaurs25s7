@@ -89,3 +89,10 @@ h2{
     letter-spacing: 1px;
 }
 
+/*
+Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px.
+*/
+section h2+p{
+    text-indent: 20px;
+}
+
