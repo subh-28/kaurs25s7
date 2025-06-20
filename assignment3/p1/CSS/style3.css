@@ -68,6 +68,10 @@ h1,h2,h3{
     Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
     */
     font-size: 2.4rem;
+    /*
+    Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit.
+    */
+    letter-spacing: 1px;
 
 
 }
