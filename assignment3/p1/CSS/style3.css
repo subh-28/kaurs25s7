@@ -45,7 +45,12 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
-body{/*
+body{
+    /*
+    Font-Family
+    */
+    font-family: Georgia,serif;
+    /*
     Give the page a site-wide font-size of 10px.
     */
     font-size: 10px;
