@@ -96,3 +96,37 @@ section h2+p{
     text-indent: 20px;
 }
 
+/*
+Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.
+*/
+a{
+    color: #a66;
+    text-decoration: underline;
+}
+a:visited{
+    color: rgb(240, 10, 10);
+}
+a:hover{
+    color: rgb(135, 34, 34);
+    text-decoration: none;
+}
+a:focus{
+    color:rgb(131, 48, 48)
+}
+a:active{
+    background-color: #a66;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+/* Make it so that external links have the external link icon inserted next to them. */
+a[href^="http"]::after{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../external-link-52\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}   
