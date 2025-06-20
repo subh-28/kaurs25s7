@@ -14,16 +14,18 @@ div{
     A reasonable height for a large box, centering the text vertically in the process.
     */
     height: 100px;
-    display: table-cell;
+    display: flex;
+    align-items: center;
     vertical-align: middle;
+    justify-content: center;
     /*
     Center the box horizontally.
     */
-    margin: 0 200px;
+    margin: auto;
     /*
     Center the text within the box.
     */
-    text-align: center;
+    font-size: 1.5rem;
 
 
 }
