@@ -41,4 +41,8 @@ text-shadow: 1px 1px 2px black;
 A fairly subtle border radius.
 */
 border-radius: 8px;
+/*
+A 1-pixel solid border with a color similar to the base color, but a slightly darker shade.
+*/
+border: 1px solid #8e0000;
 }
