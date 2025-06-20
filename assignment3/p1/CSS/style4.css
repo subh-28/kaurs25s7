@@ -59,3 +59,13 @@ nav ul{
 nav ul li{
     flex: 1;
 }
+/*
+The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it.
+*/
+nav {
+    position: sticky;
+    top: 0;
+}
+main article img{
+    float: left;
+}
