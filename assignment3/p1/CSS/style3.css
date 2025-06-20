@@ -75,6 +75,10 @@ h1{
     Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit.
     */
     letter-spacing: 1px;
+    /*
+    Center your top level heading on the page.
+    */
+    text-align: center;
 }
 h2{
     font-family: 'Josefin Slab',serif;
