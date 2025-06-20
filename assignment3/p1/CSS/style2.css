@@ -25,6 +25,8 @@ div{
     /*
     Center the text within the box.
     */
+    /*  slight increase in font size, to around 17-18 pixel computed style. Use rems. Write a comment about how you worked out the value.
+    */
     font-size: 1.5rem;
 
 
