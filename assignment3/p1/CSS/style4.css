@@ -67,6 +67,8 @@ nav {
     top: 0;
 }
 /*
+The image that is inside the article should have text wrapped around it.
+*/
 main article img{
     float: left;
 }
