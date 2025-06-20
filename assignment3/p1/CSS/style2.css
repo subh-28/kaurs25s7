@@ -45,4 +45,12 @@ border-radius: 8px;
 A 1-pixel solid border with a color similar to the base color, but a slightly darker shade.
 */
 border: 1px solid #8e0000;
+/* 
+A linear semi-transparent black gradient that goes toward the bottom right corner. Make it completely transparent at the start, grading to around 0.2 opacity by 30% along, and remaining at the same color until the end.
+*/
+background-image: linear-gradient(to bottom right,
+rgba(0,0,0,0) 0%,
+rgba(0,0,0,0.2) 30%,
+rgba(0,0,0,0.2) 100%
+);
 }
