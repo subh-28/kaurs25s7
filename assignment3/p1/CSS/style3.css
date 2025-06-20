@@ -69,8 +69,11 @@ body{
 Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
 */
 h1{
+    font-family: 'Josefin Slab',serif;
     font-size: 3.2rem;
 }
 h2{
+    font-family: 'Josefin Slab',serif;
     font-size: 2rem;
 }
+
