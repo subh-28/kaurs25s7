@@ -62,16 +62,16 @@ Give the page a site-wide font-size of 10px.
   word-spacing: 1px;
 }
 
-h1,h2,h3{
-    font-family: 'Lato',sans-serif;
-    /*
-    Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
-    */
+/*
+Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
+*/
+
+h1{
     font-size: 2.4rem;
-    /*
-    Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit.
-    */
-    letter-spacing: 1px;
-
-
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.4rem;
 }
