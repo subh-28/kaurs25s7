@@ -54,4 +54,10 @@ Give the page a site-wide font-size of 10px.
   Give your body text a suitable line-height.
   */
   line-height: 10px;
+  /*
+  Give your body text some letter-spacing and word-spacing, as appropriate.
+  */
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+
 }
