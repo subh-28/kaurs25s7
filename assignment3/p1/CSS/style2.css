@@ -10,4 +10,10 @@ div{
     */
     border: 20px solid black;
     width: 200px;
+    /*
+    A reasonable height for a large box, centering the text vertically in the process.
+    */
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
 }
