@@ -92,3 +92,10 @@ The font-family for headings
 h1,h2,h3{
     font-family: 'Lato',sans-serif;
 }
+/*
+Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px.
+*/
+
+section h2+p{
+    text-indent: 20px;
+}
