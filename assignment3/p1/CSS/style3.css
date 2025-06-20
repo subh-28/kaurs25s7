@@ -75,3 +75,9 @@ h2{
 h3{
     font-size: 1.4rem;
 }
+/*
+Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit.
+*/
+h1,h2,h3{
+    letter-spacing: 1px;
+}
