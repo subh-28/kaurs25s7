@@ -73,3 +73,30 @@ main article img{
     float: left;
     padding-right: 20px ;
 }
+/*
+The <article> and <aside> elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.
+*/
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+main article{
+    flex: 2;
+}
+main aside{
+    flex: 1;
+}
+/*
+The photographs should display as a two column grid with a 1 pixel gap between the images.
+*/
+.photos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+}
+.photos img{
+    width: 100%;
+    display: block;
+}
