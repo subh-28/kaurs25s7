@@ -49,3 +49,13 @@ body {
   .feature {
       width: 200px;
   }
+/*
+To display the navigation items in a row, with an equal amount of space between the items.
+*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    flex: 1;
+}
