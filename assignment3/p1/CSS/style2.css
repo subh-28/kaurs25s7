@@ -20,5 +20,10 @@ div{
     Center the box horizontally.
     */
     margin: 0 200px;
+    /*
+    Center the text within the box.
+    */
+    text-align: center;
+
 
 }
