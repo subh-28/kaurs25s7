@@ -3,3 +3,11 @@ html {
 }
 
 /* Your CSS below here */
+
+div{
+    /*
+    A reasonable width for a large box, say around 200 pixels.
+    */
+    border: 20px solid black;
+    width: 200px;
+}
