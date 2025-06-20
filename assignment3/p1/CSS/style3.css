@@ -1,4 +1,6 @@
 /* General setup */
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -43,4 +45,6 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+h1{
+    font-family: 'Josefin Slab', serif;
+}
