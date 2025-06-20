@@ -16,4 +16,9 @@ div{
     height: 100px;
     display: table-cell;
     vertical-align: middle;
+    /*
+    Center the box horizontally.
+    */
+    margin: 0 200px;
+
 }
