@@ -68,6 +68,11 @@ Give your headings and other element types appropriate font-sizes defined using 
 
 h1{
     font-size: 2.4rem;
+    /*
+    Center your top level heading on the page.
+    */
+    text-align: center;
+
 }
 h2{
     font-size: 1.8rem;
