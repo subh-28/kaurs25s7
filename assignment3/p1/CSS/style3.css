@@ -81,3 +81,9 @@ Give your headings a little bit of letter-spacing to make them not too squashed,
 h1,h2,h3{
     letter-spacing: 1px;
 }
+/*
+The font-family for headings
+*/
+h1,h2,h3{
+    font-family: 'Lato',sans-serif;
+}
