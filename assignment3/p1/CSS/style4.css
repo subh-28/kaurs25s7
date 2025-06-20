@@ -71,4 +71,5 @@ The image that is inside the article should have text wrapped around it.
 */
 main article img{
     float: left;
+    padding-right: 20px ;
 }
