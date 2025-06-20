@@ -32,5 +32,9 @@ div{
 A base color for the design. Give the box this color as its background color.
 */
 background-color: #e63946;
-
+/*
+A contrasting color for the text and a black text shadow.
+*/
+color: white;
+text-shadow: 1px 1px 2px black;
 }
