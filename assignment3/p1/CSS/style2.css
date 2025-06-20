@@ -37,4 +37,8 @@ A contrasting color for the text and a black text shadow.
 */
 color: white;
 text-shadow: 1px 1px 2px black;
+/*
+A fairly subtle border radius.
+*/
+border-radius: 8px;
 }
