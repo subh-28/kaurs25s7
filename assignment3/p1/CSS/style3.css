@@ -55,6 +55,10 @@ body{
     Give your body text a suitable line-height.
     */
     line-height: 1.6;
-    
+    /*
+    Give your body text some letter-spacing and word-spacing, as appropriate.
+    */
+    letter-spacing: 0.3px;
+    word-spacing: 0.4px;
     
 }
