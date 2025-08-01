@@ -1,5 +1,5 @@
 // Name: subhpreet KAur
-// File: main.js in part 2 of assignment 4
+// File: main.js in part 3 of assignment 4
 // Date: 1 August 2025
 // Description: he bouncing balls animation
 
