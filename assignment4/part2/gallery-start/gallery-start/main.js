@@ -23,14 +23,15 @@ const imageAltTexts = {
 
 /* Looping through images */
 for(let i = 0; i < imageFilenames.length; i++){
-    const file = 'images/' + imageFiles[i];
-    const text = altTexts[i];
+    const file = 'images/' + imageFiles[i]; // path to the image
+    const text = altTexts[i]; // lt text for the image
 
+// CTo create a newimg element nd set its attributes and to upload it to the web page 
 const newImage = document.createElement('img');
 newImage.setAttribute('src', file);
 newImage.setAttribute('alt', text);
 thumbBar.appendChild(newImage);
-
+// To show the big image whenever the thumbnail is pressed
 newImage.onclick = function(){
     displayedImage.src = file;
     displayedImage.alt = text;
@@ -41,12 +42,12 @@ newImage.onclick = function(){
 btn.onclick = function(){
     const currentClass = btn.getAttribute('class');
     if (currentClass == 'dark'){
-        btn.Attribute('class', 'light');
-        btn.Content = 'lighten';
-        overlay.Style.backgroundColor = 'rgb(0 0 0, 0.5)';
+        btn.setAttribute('class', 'light'); // To change the class to light
+        btn.textContent = 'lighten'; // To change the button text
+        overlay.computedStyleMap.backgroundColor = 'rgb(0 0 0, 0.5)'; // To apply the dark overlay
    } else{
-    btn.Attribute('class', 'dark');
-    btn.Content = 'Darken';
-    overlay.Style.backgroundColor = 'rgb(0 0 0, 0)';
+    btn.setAttribute('class', 'dark'); // To change the class to dark
+    btn.textContent = 'Darken'; // To change the button text
+    overlay.computedStyleMap.backgroundColor = 'rgb(0 0 0, 0)'; // To apply the light overlay
    }
 };
