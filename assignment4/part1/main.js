@@ -50,10 +50,11 @@ function result() {
     const weight = Math.round(300 * 0.071) + 'stone';
     const temperature =  Math.round((94-32) * 5/9) + 'centigrade';
 
-    
+    newStory = newStory.replace('300 pounds', weight);
+    newStory = newStory.replace('94 fahrenheit', temperature);
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
