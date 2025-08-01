@@ -38,3 +38,15 @@ newImage.onclick = function(){
 }
 
 /* Wiring up the Darken/Lighten button */
+btn.onclick = function(){
+    const currentClass = btn.getAttribute('class');
+    if (currentClass == 'dark'){
+        btn.Attribute('class', 'light');
+        btn.Content = 'lighten';
+        overlay.Style.backgroundColor = 'rgb(0 0 0, 0.5)';
+   } else{
+    btn.Attribute('class', 'dark');
+    btn.Content = 'Darken';
+    overlay.Style.backgroundColor = 'rgb(0 0 0, 0)';
+   }
+};
