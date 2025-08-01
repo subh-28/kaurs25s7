@@ -23,6 +23,14 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+class Shape{
+    constructor(x, y, velX, velY){
+        this.x = x;
+        this.y = y;
+        this.velX = velX;
+        this.velY;
+    }
+}
 
 class Ball {
   constructor(x, y, velX, velY, color, size) {
@@ -90,7 +98,7 @@ while (balls.length < 25) {
     random(-7, 7),
     randomRGB(),
     size
-  );
+  );s
 
   balls.push(ball);
 }
