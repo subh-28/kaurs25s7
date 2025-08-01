@@ -30,15 +30,19 @@ let insertz = ['spontaneously combusted',
 randomize.addEventListener('click', result);
 
 function result() {
+    let newStory = storyText;
 
-  if(customName.value !== '') {
-    const name = customName.value;
+    const Itemx = randomValueFromArray(insertx);
+    const Itemy = randomValueFromArray(inserty);
+    const Itemz = randomValueFromArray(insertz);
 
-  }
+    newStory = newStory.replaceAll(':insertx:', Itemx);
+    newStory = newStory.replaceAll(':inserty:', Itemy);
+    newStory = newStory.replaceAll(':insertz:', Itemz);
 
-  if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+  
+
+
 
   }
 
