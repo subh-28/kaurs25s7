@@ -23,7 +23,7 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-
+// Modeling the ball
     class Ball {
   constructor(x, y, velX, velY, color, size) {
     this.x = x;
@@ -33,14 +33,14 @@ function randomRGB() {
     this.color = color;
     this.size = size;
   }
-
+// Drawing the ball
   draw() {
     ctx.beginPath();
     ctx.fillStyle = this.color;
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
-
+// Updating the ball's data
   update() {
     if (this.x + this.size >= width) {
       this.velX = -this.velX;
@@ -61,7 +61,7 @@ function randomRGB() {
     this.x += this.velX;
     this.y += this.velY;
   }
-
+// adding the collision detection
   collisionDetect() {
     for (const ball of balls) {
       if (this !== ball) {
@@ -76,7 +76,7 @@ function randomRGB() {
     }
   }
 }
-
+// animating the balls
 const balls = [];
 
 while (balls.length < 25) {
