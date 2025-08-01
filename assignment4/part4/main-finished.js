@@ -23,6 +23,7 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+// Create the shape class
 class Shape{
     constructor(x, y, velX, velY){
         this.x = x;
@@ -69,7 +70,7 @@ class Ball {
     this.x += this.velX;
     this.y += this.velY;
   }
-
+// Updated collision detect
   collisionDetect() {
     for (const ball of balls) {
       if (!(this === ball) && ball.exists) {
@@ -85,11 +86,13 @@ class Ball {
   }
   // …
 }
+// To construct the evil circle
 class EvilCircle extends Shape{
     constructor(x, y){
         super(x, y, 20, 20);
         this.color = 'white';
         this.size = 10;
+        // To move the circle
        window.addEventListener("keydown", (e) => {
   switch (e.key) {
     case "a":
@@ -107,6 +110,9 @@ class EvilCircle extends Shape{
   }
 }); 
     }
+// Define the methods of the Evil Circle
+
+// draw the evil circle 
 draw(){
     ctx.beginPath();
     ctx.strokeStyle = this.color;
@@ -114,6 +120,7 @@ draw(){
     ctx.arc(this.x, this.y, this.size, 0, 2* Math.PI);
     ctx.stroke();
 }
+// To keep the circle within the boundaries
 checkBounds(){
     if((this.x + this.size) <= width){
         this.x = width - this.size;
@@ -128,6 +135,7 @@ checkBounds(){
         this.y = this.size;
     }
 }
+// To detect the collisions with the balls 
 collisionDetect() {
     for (const ball of balls) {
       if (ball.exits) {
@@ -145,6 +153,7 @@ collisionDetect() {
   }
 }
 
+// to create the ball array and the counter
 let balls = [];
 let ballCount = 25;
 
@@ -163,8 +172,11 @@ while (balls.length < ballCount) {
 
   balls.push(ball);
 }
+// To display the initial ball count
+parseFloat.textContent = 'Ball Count: "${ballCount}';
+// To create the evil circle 
 const evil = new EvilCircle(random(0,width), random(0, height));
-
+// Animation loop
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
@@ -181,5 +193,5 @@ function loop() {
 
   requestAnimationFrame(loop);
 }
-parseFloat.textContent = 'Ball count: ${ballCount}';
+// To start the animation loop 
 loop();
