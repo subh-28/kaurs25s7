@@ -40,8 +40,11 @@ function result() {
     newStory = newStory.replaceAll(':inserty:', Itemy);
     newStory = newStory.replaceAll(':insertz:', Itemz);
 
-  
+  if(customName.value !== '') {
+    const name = customName.value;
+    newStory = newStory.replace('Bob', name);
 
+  }
 
 
   }
