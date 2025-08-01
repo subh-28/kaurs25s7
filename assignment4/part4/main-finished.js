@@ -128,11 +128,27 @@ checkBounds(){
         this.y = this.size;
     }
 }
+collisionDetect() {
+    for (const ball of balls) {
+      if (ball.exits) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + ball.size) {
+            ball.exists = false;
+            ballCount--;
+            parseFloat.textContent = 'Ball count : ${ballCount}';
+        }
+      }
+    }
+  }
 }
 
-const balls = [];
+let balls = [];
+let ballCount = 25;
 
-while (balls.length < 25) {
+while (balls.length < ballCount) {
   const size = random(10, 20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
@@ -147,6 +163,7 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
+const evil = new EvilCircle(random(0,width), random(0, height));
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
@@ -158,7 +175,11 @@ function loop() {
     ball.collisionDetect();
   }
 
+  evil.draw();
+  evil.checkBounds();
+  evil.collisionDetect();
+
   requestAnimationFrame(loop);
 }
-
+parseFloat.textContent = 'Ball count: ${ballCount}';
 loop();
