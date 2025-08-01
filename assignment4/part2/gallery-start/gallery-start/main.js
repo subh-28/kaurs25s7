@@ -22,10 +22,19 @@ const imageAltTexts = {
 };
 
 /* Looping through images */
+for(let i = 0; i < imageFilenames.length; i++){
+    const file = 'images/' + imageFiles[i];
+    const text = altTexts[i];
 
 const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
+newImage.setAttribute('src', file);
+newImage.setAttribute('alt', text);
 thumbBar.appendChild(newImage);
+
+newImage.onclick = function(){
+    displayedImage.src = file;
+    displayedImage.alt = text;
+};
+}
 
 /* Wiring up the Darken/Lighten button */
