@@ -1,3 +1,8 @@
+//Name: Subhpreet Kaur
+//File: index.html for part 1 of assignment 4
+//Date: 1 August 2025
+//Description: A silly story generator javascript 
+    
 //COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
