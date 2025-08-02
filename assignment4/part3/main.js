@@ -106,7 +106,7 @@ function loop() {
 
   requestAnimationFrame(loop);
 }
-// To start the animation loop
+// To start animation loop
 loop();
 
 
