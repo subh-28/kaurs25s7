@@ -3,7 +3,7 @@
 //Date: 1 August 2025
 //Description: A silly story generator javascript 
     
-//COMPLETE VARIABLE AND FUNCTION DEFINITIONS
+//COMPLETE VARIABLE AND FUNCTION DEFINITIONS.
 
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
