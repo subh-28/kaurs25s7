@@ -8,6 +8,7 @@
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
+const para = document.querySelector("p");
 
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
@@ -35,7 +36,6 @@ class Shape{
 
 class Ball extends Shape {
   constructor(x, y, velX, velY, color, size) {
-    this.x = x;
     super(x, y, velX, velY);
     this.color = color;
     this.size = size;
@@ -43,6 +43,7 @@ class Ball extends Shape {
   }
 
   draw() {
+    if(!this.exists) return;
     ctx.beginPath();
     ctx.fillStyle = this.color;
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
@@ -50,6 +51,8 @@ class Ball extends Shape {
   }
 
   update() {
+    if (!this.exists) return;
+
     if (this.x + this.size >= width) {
       this.velX = -Math.abs(this.velX);
     }
@@ -121,7 +124,7 @@ draw(){
 }
 // To keep the circle within the boundaries
 checkBounds(){
-    if((this.x + this.size) <= width){
+    if((this.x + this.size) >= width){
         this.x = width - this.size;
     }
     if ((this.x - this.size) <= 0){
@@ -145,7 +148,7 @@ collisionDetect() {
         if (distance < this.size + ball.size) {
             ball.exists = false;
             ballCount--;
-            parseFloat.textContent = 'Ball count : ${ballCount}';
+            para.textContent = 'Ball count: ${ballCount}';
         }
       }
     }
@@ -172,7 +175,7 @@ while (balls.length < ballCount) {
   balls.push(ball);
 }
 // To display the initial ball count
-para.textContent = 'Ball Count: "${ballCount}';
+para.textContent = 'Ball Count: ${ballCount}';
 // To create the evil circle 
 const evil = new EvilCircle(random(0,width), random(0, height));
 // Animation loop
