@@ -102,6 +102,7 @@ function loop() {
   for (const ball of balls) {
     ball.draw();
     ball.update();
+    ball.collisionDetect();
   }
 
   requestAnimationFrame(loop);
