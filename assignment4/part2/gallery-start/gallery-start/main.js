@@ -23,18 +23,18 @@ const imageAltTexts = {
 
 /* Looping through images */
 for(let i = 0; i < imageFilenames.length; i++){
-    const file = 'images/' + imageFiles[i]; // path to the image
-    const text = altTexts[i]; // lt text for the image
+    const filename = imageFilenames[i]; // path to the image
+    const altText = imageAltTexts[filename]; // lt text for the image
 
 // CTo create a newimg element nd set its attributes and to upload it to the web page 
 const newImage = document.createElement('img');
-newImage.setAttribute('src', file);
-newImage.setAttribute('alt', text);
+newImage.setAttribute('src', filename);
+newImage.setAttribute('alt', altText);
 thumbBar.appendChild(newImage);
 // To show the big image whenever the thumbnail is pressed
 newImage.onclick = function(){
-    displayedImage.src = file;
-    displayedImage.alt = text;
+    displayedImage.setAttribute = ('src', filename);
+    displayedImage.setAttribute = ('alt',altText);
 };
 }
 
