@@ -29,18 +29,17 @@ class Shape{
         this.x = x;
         this.y = y;
         this.velX = velX;
-        this.velY;
+        this.velY = velY;
     }
 }
 
-class Ball {
+class Ball extends Shape {
   constructor(x, y, velX, velY, color, size) {
     this.x = x;
-    this.y = y;
-    this.velX = velX;
-    this.velY = velY;
+    super(x, y, velX, velY);
     this.color = color;
     this.size = size;
+    this.exists = true;
   }
 
   draw() {
@@ -138,7 +137,7 @@ checkBounds(){
 // To detect the collisions with the balls 
 collisionDetect() {
     for (const ball of balls) {
-      if (ball.exits) {
+      if (ball.exists) {
         const dx = this.x - ball.x;
         const dy = this.y - ball.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
@@ -168,12 +167,12 @@ while (balls.length < ballCount) {
     random(-7, 7),
     randomRGB(),
     size
-  );s
+  );
 
   balls.push(ball);
 }
 // To display the initial ball count
-parseFloat.textContent = 'Ball Count: "${ballCount}';
+para.textContent = 'Ball Count: "${ballCount}';
 // To create the evil circle 
 const evil = new EvilCircle(random(0,width), random(0, height));
 // Animation loop
