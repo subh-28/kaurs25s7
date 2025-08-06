@@ -1,5 +1,5 @@
 // Name: subhpreet KAur
-// File: main.js in part 4 of assignment 4
+// File: main.js of assignment 5
 // Date: 6 August 2025
 // Description: Accessibility fixed version of MDN Troubleshooting website.
 
