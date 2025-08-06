@@ -8,6 +8,7 @@ Description:  Accessibility fixed version of MDN Troubleshooting website.
 */
 
 
+
 /* || General setup */
 
 html, body {
@@ -62,7 +63,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: white;
 }
 
 article, footer, .secondary {
@@ -75,7 +76,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: white;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -99,7 +100,7 @@ div[class="nav"] a {
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 div[class="nav"] .search {
@@ -122,9 +123,22 @@ div[class="nav"] .search {
 .search input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
-  background: #333;
+  background: #222;
   border: 0;
   color: white;
+}
+
+button,
+.comment-form input[type="submit"],
+.show-hide {
+  background-color: #222;
+  color:white;
+}
+
+button.hover,
+.comment-form input[type = "submit"]:hover,
+.show-hide:hover{
+  background-color: #000;
 }
 
 /* || main layout */
