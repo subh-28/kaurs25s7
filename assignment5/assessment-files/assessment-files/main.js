@@ -1,3 +1,11 @@
+// Name: subhpreet KAur
+// File: main.js in part 4 of assignment 4
+// Date: 6 August 2025
+// Description: Accessibility fixed version of MDN Troubleshooting website.
+
+
+
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
