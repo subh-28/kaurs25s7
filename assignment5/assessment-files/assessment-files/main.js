@@ -9,18 +9,21 @@
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
+showHideBtn.setAttribute('aria-expanded', 'false');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
 
 showHideBtn.onclick = function() {
-  let showHideText = showHideBtn.textContent;
-  if(showHideText === 'Show comments') {
+  let showHideText = showHideBtn.getAttribute('aria-expanded') === 'true';
+  if(!isExpanded) {
     showHideBtn.textContent = 'Hide comments';
     commentWrapper.style.display = 'block';
+    showHideBtn.setAttribute('aria-expanded', 'true');
   } else {
     showHideBtn.textContent = 'Show comments';
     commentWrapper.style.display = 'none';
+    showHideBtn.setAttribute('aria-expanded', 'false');
   }
 };
 
