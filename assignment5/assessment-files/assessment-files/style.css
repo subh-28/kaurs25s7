@@ -61,7 +61,7 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
+div[class = "nav"], article, footer, .secondary {
   background-color: white;
 }
 
@@ -73,7 +73,7 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+div[class = "nav"]{
   height: 50px;
   background-color: white;
   display: flex;
@@ -81,28 +81,30 @@ div[class="nav"] {
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
-  padding: 0;
+div[class = "nav"] ul {
+  padding: 2;
   list-style-type: none;
   flex: 2;
   display: flex;
+  gap: 10rem;
 }
 
-div[class="nav"] li {
-  display: inline;
+div[class = "nav"]li {
+  display:inline ;
   text-align: center;
   flex: 1;
+  gap: 10rem;
 }
 
-div[class="nav"] a {
+div[class = "nav"] a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
-div[class="nav"] .search {
+div[class = "nav"] .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -127,18 +129,6 @@ div[class="nav"] .search {
   color: white;
 }
 
-button,
-.comment-form input[type="submit"],
-.show-hide {
-  background-color: #222;
-  color:white;
-}
-
-button.hover,
-.comment-form input[type = "submit"]:hover,
-.show-hide:hover{
-  background-color: #000;
-}
 
 /* || main layout */
 

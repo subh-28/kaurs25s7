@@ -9,13 +9,12 @@
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
-showHideBtn.setAttribute('aria-expanded', 'false');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
 
 showHideBtn.onclick = function() {
-  let showHideText = showHideBtn.getAttribute('aria-expanded') === 'true';
+  let showHideText = showHideBtn.textContent;
   if(!isExpanded) {
     showHideBtn.textContent = 'Hide comments';
     commentWrapper.style.display = 'block';
@@ -23,7 +22,7 @@ showHideBtn.onclick = function() {
   } else {
     showHideBtn.textContent = 'Show comments';
     commentWrapper.style.display = 'none';
-    showHideBtn.setAttribute('aria-expanded', 'false');
+    
   }
 };
 
